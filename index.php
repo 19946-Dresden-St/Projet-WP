@@ -1,7 +1,13 @@
 <?php get_header(); ?>
-
+(index.php) (par défaut la "poste page" (définie coté interface wordpress) = index ? )
 <main id="site-main"></main>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae excepturi quia vero vitae voluptatum! Aliquid asperiores atque esse expedita iste magnam minus nostrum quibusdam sit veritatis. Animi aperiam consequatur possimus.
+<?php
+    include('template-parts/post-list.php');
+?>
 
+<?php 
+echo "contenu de la plage :";
+the_content();
+ ?>
 <?php get_footer(); ?>
