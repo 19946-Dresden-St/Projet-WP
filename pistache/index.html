@@ -22,7 +22,7 @@
 
 
 
-    <main>
+    <main style="background-color: lavenderblush">
 
         <div id="main-title" class="container">
             <div class="row small-padding">
@@ -40,7 +40,7 @@
             <div class="container-fluid">
                 <div id="second-title" class="row">
                     <h2>About Us</h2>
-                    <p>
+                    <p class="second-p">
                         Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution.
                     </p>
                 </div>
@@ -48,7 +48,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-5">
-                        <img src="assets/images/png/2.png" alt="crow-2 picture">
+                        <img src="assets/images/png/2.png" alt="crowd-2 picture">
                     </div>
                     <div id="div-description" class="col-7">
                         <div style="width: 70%;">
@@ -75,6 +75,77 @@
                 </div>
             </div>
         </div>
+
+        <div id="partners">
+            <div class="container">
+                <div class="row small-padding">
+                    <h2>Our Partners</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div id="pictures-partners">
+                    <div><img src="assets/images/svg/partner-1.svg" alt="logo partner"></div>
+                    <div><img src="assets/images/svg/partner-2.svg" alt="logo partner"></div>
+                    <div><img src="assets/images/svg/partner-3.svg" alt="logo partner"></div>
+                    <div><img src="assets/images/svg/partner-4.svg" alt="logo partner"></div>
+                    <div><img src="assets/images/svg/partner-5.svg" alt="logo partner"></div>
+                    <div><img src="assets/images/svg/partner-6.svg" alt="logo partner"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="team">
+            <div class="container">
+                <div class="row small-padding">
+                    <h2>Our Team</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row small-padding">
+                    <div class="col-3">
+                        <div>
+                            <img src="assets/images/png/5.png" alt="picture team">
+                        </div>
+                        <div>
+                            <h5>Sales Manages</h5>
+                            <p>+33 1 53 31 25 23</p>
+                            <p>sales@company.com</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="assets/images/png/6.png" alt="picture team">
+                        </div>
+                        <div>
+                            <h5>Event planner</h5>
+                            <p>+33 1 53 31 25 24</p>
+                            <p>plan@company.com</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="assets/images/png/7.png" alt="picture team">
+                        </div>
+                        <div>
+                            <h5>Designer</h5>
+                            <p>+33 1 53 31 25 20</p>
+                            <p>design@company.com</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="assets/images/png/8.png" alt="picture team">
+                        </div>
+                        <div>
+                            <h5>CEO</h5>
+                            <p>+33 1 53 31 25 25</p>
+                            <p>ceo@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="services">
             <div class="container">
                 <div class="row small-padding">
@@ -95,6 +166,17 @@
             </div>
         </div>
 
+        <div id="services-details">
+            <div class="container">
+                <div class="row small-padding">
+                    <h2>Corp. Parties</h2>
+                    <p class="second-p">Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution. </p>
+                </div>
+            </div>
+            <div>
+                <img class="img-fluid" src="assets/images/png/9.png" alt="crow-3 picture">
+            </div>
+        </div>
 
     </main>
 
@@ -159,9 +241,8 @@
         font-family: "Mulish", serif;
     }
 
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4, h5 {
         color: var(--dark-blue);
-        font-weight: 400;
     }
 
     h1 {
@@ -176,8 +257,16 @@
         letter-spacing: 3px;
     }
 
+    h3 {
+        font-size: 36px;
+    }
+
     h4 {
         font-size: 28px;
+    }
+
+    h5 {
+        font-size: 24px;
     }
 
     .small-padding {
@@ -202,6 +291,10 @@
     }
     #site-header .row .col:nth-child(2) {
         text-align: right;
+    }
+
+    #side-header:focus {
+        background-color: red;
     }
 
 
@@ -238,16 +331,19 @@
     }
 
     #second-section #div-description p {
-        margin: 1rem 0;
-        line-height: 2rem;
+        margin-top: 1rem;
+        line-height: 1.8rem;
+        font-size: 14px;
     }
 
     #second-section #div-description div:not(:first-child) h3 {
         margin-top: 2rem;
     }
 
-    #second-section p {
-        font-size: 16px;
+    .second-p {
+        font-size: 18px;
+        line-height: 2rem;
+        margin-top: 0.5rem;
     }
 
     #second-section #second-title {
@@ -294,13 +390,55 @@
         width: -webkit-fill-available;
     }
 
+    #services-details {
+        padding-bottom: 0;
+    }
+
+    #services-details .container {
+        padding-bottom: 4rem;
+    }
+
+    #services-details .row {
+        width: 60%;
+    }
 
 
 
+    #pictures-partners {
+        display: flex;
+        padding: 2rem 4rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #pictures-partners img {
+        max-width: 80%;
+    }
+
+
+
+    #team img {
+        width: 98%;
+    }
+
+    #team h5 {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #team p {
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+    }
 
     #site-footer {
         background-color: var(--dark-blue);
         color: white;
+    }
+
+    #site-footer h5 {
+        color: white;
+        font-size: 20px;
     }
 
     #site-footer .row:first-child {
