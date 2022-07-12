@@ -32,7 +32,7 @@
                     <h2>About Us</h2>
                     <p class="second-p">
                         <!-- Je pense qu'ici il faudra mettre the_content() -->
-                        Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution.
+                       
                     </p>
                 </div>
             </div>

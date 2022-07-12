@@ -9,7 +9,7 @@
                             <div>
                                 <h3>Who are we?</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu convallis elit, at convallis magna.
+                                    <?= get_theme_mod('desc-whoarewe','eraerz') ?>
                                 </p>
                             </div>
                             <div>

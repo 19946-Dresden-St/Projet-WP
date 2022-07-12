@@ -55,11 +55,12 @@
                     <div class="row small-padding">
                             <h2>Our Services</h2>
                     </div>
-        </div>
-        <?php
-            include('template-parts/services.php');
-        ?>
+        
+            <?php
+                include('template-parts/services.php');
+            ?>
 
+        </div>
       
 
     </main>
