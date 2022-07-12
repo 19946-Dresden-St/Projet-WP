@@ -8,22 +8,7 @@
 </head>
     <body>
 
-<!--    <header id="site-header">
-        <div class="container">
-            <div class="row small-padding">
-                <div class="col">
-                    <img src="assets/images/svg/logo.svg" alt="logo">
-                </div>
-                <div class="col">
-                    <img src="assets/images/svg/menu.svg" alt="menu">
-                </div>
-            </div>
-        </div>
-    </header>-->
-
-
-
-<header id="site-header">
+    <header id="site-header">
     <nav class="navbar">
         <div class="container">
             <div class="row small-padding">
@@ -269,17 +254,13 @@
     function changeIcon() {
         var logo1 = document.getElementById("nav-open");
         var logo2 = document.getElementById("nav-close");
-        console.log('avant 1: ', logo1, logo2);
-        if ( logo2.hasAttribute("style") ) {
+        if ( logo2.style.display === "none" ) {
             logo1.setAttribute("style", "display: none");
             logo2.setAttribute("style", "display: block");
-            console.log('apres1: ', logo1, logo2);
         } else {
             logo1.setAttribute("style", "display: block");
             logo2.setAttribute("style", "display: none");
-            console.log('apres2: ', logo1, logo2);
         }
-
     }
 </script>
 <style>
