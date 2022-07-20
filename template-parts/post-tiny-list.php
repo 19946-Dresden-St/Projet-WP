@@ -24,11 +24,6 @@
 		}
 		echo '</ul>';
 	}
-	echo '<div class="post-list-pagination">';
-	echo paginate_links([
-		'total' => $the_query->max_num_pages,
-		'current' => $paged
-	]);
 	echo '</div>';
 	?>
 </div>
