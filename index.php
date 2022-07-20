@@ -4,10 +4,11 @@
 
 <?php
     include('template-parts/post-list.php');
+    include ('template-parts/post-tiny-list.php');
+    get_search_form();
 ?>
 
 <?php 
 echo "contenu de la plage :";
-the_content();
  ?>
 <?php get_footer(); ?>
