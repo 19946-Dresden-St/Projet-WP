@@ -11,7 +11,7 @@
     <body>
 
     <?php get_header() ?>
-    <main style="background-color: lavenderblush">
+    <main>
 
         <div id="main-title" class="container">
             <div class="row small-padding">

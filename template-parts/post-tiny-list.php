@@ -4,7 +4,7 @@
 
 	$args = [
 		'post_type' => 'post',
-		'posts_per_page' => 2,
+		'posts_per_page' => 4,
 		'post_status' => 'publish',
 		'paged' => $paged
 	];
@@ -24,11 +24,6 @@
 		}
 		echo '</ul>';
 	}
-	echo '<div class="post-list-pagination">';
-	echo paginate_links([
-		'total' => $the_query->max_num_pages,
-		'current' => $paged
-	]);
 	echo '</div>';
 	?>
 </div>

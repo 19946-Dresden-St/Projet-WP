@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+add_theme_support( 'post-thumbnails' );
 add_action('customize_register','projet_wp_customize_aboutus');
 function projet_wp_customize_aboutus($wp_customize) {
     // Ajouter une section
