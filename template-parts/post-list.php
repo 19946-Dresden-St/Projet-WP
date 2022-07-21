@@ -16,7 +16,7 @@
 		while($the_query->have_posts()){
 			$the_query->the_post();
 			echo '<li><a href="' . get_permalink($post->ID) . '">';
-			echo '<article>';
+			echo '<article>'; 
 			echo '<h1>' . $post->post_title . '</h1>';
 			echo ' <time>' . date_i18n('j F Y', get_post_timestamp($post)) . '</time>';
             echo '<p>'.wp_strip_all_tags($post->post_content) .'</p>';

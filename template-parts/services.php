@@ -2,14 +2,14 @@
            
             <div class="container-fluid">
                 <div class="row row-pictures">
-                    <div class="col-3"><img class="img-fluid" src="<?php echo get_bloginfo('template_url') ?>/src/images/png/12.png" alt="chairs picture"></div>
-                    <div class="col-3"><img class="img-fluid" src="<?php echo get_bloginfo('template_url') ?>/src/images/png/11.png" alt="woman picture"></div>
+                    <div class="col-3"><img class="img-fluid" src="<?= wp_get_attachment_url(get_theme_mod('svc-photo1')) ?>" alt="chairs picture"></div>
+                    <div class="col-3"><img class="img-fluid" src="<?= wp_get_attachment_url(get_theme_mod('svc-photo2')) ?>" alt="woman picture"></div>
                     <div class="col-3">
                         <div class="col-title">
                             <h4>Private Parties</h4>
                         </div>
                     </div>
-                    <div class="col-3"><img class="img-fluid" src="<?php echo get_bloginfo('template_url') ?>/src/images/png/3.png" alt="party picture"></div>
+                    <div class="col-3"><img class="img-fluid" src="<?= wp_get_attachment_url(get_theme_mod('svc-photo3')) ?>" alt="party picture"></div>
                 </div>
             </div>
 </div>
@@ -18,10 +18,10 @@
             <div class="container">
                 <div class="row small-padding">
                     <h2>Corp. Parties</h2>
-                    <p class="second-p">Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution. </p>
+                    <p class="second-p"><?= get_option('svc-corp','Corp parties bloc') ?></p>
                 </div>
             </div>
             <div>
-                <img class="img-fluid" src="<?php echo get_bloginfo('template_url') ?>/src/images/png/9.png" alt="crow-3 picture">
+                <img class="img-fluid" src="<?= wp_get_attachment_url(get_theme_mod('svc-photo4')) ?>" alt="crow-3 picture">
             </div>
         </div>

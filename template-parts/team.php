@@ -8,42 +8,42 @@
                 <div class="row small-padding">
                     <div class="col-3">
                         <div>
-                            <img src="<?php echo get_bloginfo('template_url') ?>/src/images/png/5.png" alt="picture team">
+                            <img src="<?= wp_get_attachment_url(get_theme_mod('desc-photo1')) ?>" alt="picture team">
                         </div>
                         <div>
-                            <h5>Sales Manages</h5>
-                            <p>+33 1 53 31 25 23</p>
-                            <p>sales@company.com</p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div>
-                            <img src="<?php echo get_bloginfo('template_url') ?>/src/images/png/6.png" alt="picture team">
-                        </div>
-                        <div>
-                            <h5>Event planner</h5>
-                            <p>+33 1 53 31 25 24</p>
-                            <p>plan@company.com</p>
+                            <h5><?= get_option('desc-role1','Role') ?></h5>
+                            <p><?= get_option('desc-tel1','01 01 01 01 01') ?></p>
+                            <p><?= get_option('desc-mail1','mail@example.com') ?></p>
                         </div>
                     </div>
                     <div class="col-3">
                         <div>
-                            <img src="<?php echo get_bloginfo('template_url') ?>/src/images/png/7.png" alt="picture team">
+                            <img src="<?= wp_get_attachment_url(get_theme_mod('desc-photo2')) ?>" alt="picture team">
                         </div>
                         <div>
-                            <h5>Designer</h5>
-                            <p>+33 1 53 31 25 20</p>
-                            <p>design@company.com</p>
+                            <h5><?= get_option('desc-role2','Role') ?></h5>
+                            <p><?= get_option('desc-tel2','01 01 01 01 01') ?></p>
+                            <p><?= get_option('desc-mail2','mail@example.com') ?></p>
                         </div>
                     </div>
                     <div class="col-3">
                         <div>
-                            <img src="<?php echo get_bloginfo('template_url') ?>/src/images/png/8.png" alt="picture team">
+                            <img src="<?= wp_get_attachment_url(get_theme_mod('desc-photo3')) ?>" alt="picture team">
                         </div>
                         <div>
-                            <h5>CEO</h5>
-                            <p>+33 1 53 31 25 25</p>
-                            <p>ceo@company.com</p>
+                            <h5><?= get_option('desc-role3','Role') ?></h5>
+                            <p><?= get_option('desc-tel3','01 01 01 01 01') ?></p>
+                            <p><?= get_option('desc-mail3','mail@example.com') ?></p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <img src="<?= wp_get_attachment_url(get_theme_mod('desc-photo4')) ?>" alt="picture team">
+                        </div>
+                        <div>
+                            <h5><?= get_option('desc-role4','Role') ?></h5>
+                            <p><?= get_option('desc-tel4','01 01 01 01 01') ?></p>
+                            <p><?= get_option('desc-mail4','mail@example.com') ?></p>
                         </div>
                     </div>
                 </div>

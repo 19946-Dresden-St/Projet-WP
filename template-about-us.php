@@ -11,7 +11,7 @@
     <body>
 
     <?php get_header() ?>
-    <main style="background-color: lavenderblush">
+    <main>
 
         <div id="main-title" class="container">
             <div class="row small-padding">
@@ -31,8 +31,7 @@
                 <div id="second-title" class="row">
                     <h2>About Us</h2>
                     <p class="second-p">
-                        <!-- Je pense qu'ici il faudra mettre the_content() -->
-                       
+                        <?= get_option('desc-about-us','About you') ?>
                     </p>
                 </div>
             </div>
